@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accuclima</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <h3  align="center">
+        <img src="weather.jfif" width="40px" height="40px"alt="Weather icon">
+        <font face="Times New Roman" color="black" size="9"> AccuClima</font>
+   </h3>
+<div class="container">
+  <div class="card card-1">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+          width="1.5em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+          </path>
+        </svg></button>
+    </div>
+    
+    <div class="Weather Loading">
+      <h2 class="city"><font face="Times New Roman" color="white" size="6" >Weather in Singapore</font></h2>
+      <h1 class="temp">31°C</h1>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/04n.png" width="70px" height="70px" alt="" class="icon"/>
+        <h3 class="description"><font face="Times New Roman" color="white" >CLOUDY</font></h3>
+      </div>
+      <div class="humidity"><font face="Times New Roman" color="white" >HUMIDITY: 60%</font></div>
+      <div class="wind"><font face="Times New Roman" color="white" >WIND SPEED: 6.2 km/h</font></div>
+    </div>
+  </div>
+   
+  <div style="text-align: left" class="card-card-2" >
+    <div class="d-flex Sunrise">
+        <div class="Sunrise"><br>
+            <img src="sunrise.png" style="float:right" width="110px" height="110px" alt="sunrise icon">
+            <h4 class="sunrise"><font face="Times New Roman" color="white" >SUNRISE:</font></h4>
+            <h2 class="sunrisetime">05:30</h></div>
+            </div><br>
+    <div class="d-flex Sunset">
+            <div class="Sunset">
+                <img src="sunset.png"style="float:right" width="110px" height="110px" alt="sunset icon">
+                <h4 class="sunset"><font face="Times New Roman" color="white" >SUNSET:</font></h4>
+                <h2 class="sunsettime">18:40</h2>
+            </div>
+        </div>
+    </div>
+  
+    <div class="card-card-3">
+      <div class="d-flex temperatures">
+        <div class="temperatures">
+            <h4 class="temp_max"><font face="Times New Roman" color="white" >MAX TEMP: </font><br><h3 class="temp_ma">40°C</h3></h4>
+            <h4 class="temp_min"><font face="Times New Roman" color="white" >MIN TEMP: <br><h3 class="temp_mi">24°C</h3></h4>
+            <h4 class="pressure"><font face="Times New Roman" color="white" >PRESSURE: <br><h3 class="press">1000 hPa</h3></h4>
+            <h6 style="display: inline" class="lat"> Latitude: </h6>&emsp;&ensp;<h6 style="display: inline"class="lon">Longitude: </h6>
+        </div>
+    </div>
+    </div>
+</div>
+  
+<div class="break"></div>
+<div class="card-body p-0">
+    <div class="d-flex weekly-weather">
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Sun </p> <i class="mdi mdi-weather-cloudy"></i>
+            <p class="mb-0"><h3> 30°</h3></p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Mon </p> <i class="mdi mdi-weather-hail"></i>
+            <p class="mb-0"><h3> 31°</h3></p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Tue </p> <i class="mdi mdi-weather-partlycloudy"></i>
+            <p class="mb-0"><h3> 28°</h3></p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Wed </p> <i class="mdi mdi-weather-pouring"></i>
+            <p class="mb-0"><h3> 30°</h3></p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Thu </p> <i class="mdi mdi-weather-pouring"></i>
+            <p class="mb-0"><h3> 29°</h3> </p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Fri </p> <i class="mdi mdi-weather-snowy-rainy"></i>
+            <p class="mb-0"><h3> 31°</h3></p>
+        </div>
+        <div class="weekly-weather-item">
+            <p class="mb-1"> Sat </p> <i class="mdi mdi-weather-snowy"></i>
+            <p class="mb-0"><h3> 32°</h3></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="break"></div>
+    <div class="card-body p-0">
+    <div class="d-flex hourly-weather">
+        <div class="hourly-weather-item">
+            <p class="mb-0"> 03:00 </p> <i class="mdi mdi-weather-cloudy"></i>
+            <p class="mb-0"><h3> 25° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-0"> 06:00 </p> <i class="mdi mdi-weather-cloudy"></i>
+            <p class="mb-0"><h3> 28° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 09:00 </p> <i class="mdi mdi-weather-hail"></i>
+            <p class="mb-0"><h3> 31° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 12:00 </p> <i class="mdi mdi-weather-partlycloudy"></i>
+            <p class="mb-0"><h3> 30° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 15:00 </p> <i class="mdi mdi-weather-pouring"></i>
+            <p class="mb-0"><h3><h3> 28° </h3></h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 18:00 </p> <i class="mdi mdi-weather-pouring"></i>
+            <p class="mb-0"><h3> 29° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 21:00 </p> <i class="mdi mdi-weather-snowy-rainy"></i>
+            <p class="mb-0"><h3> 28° </h3></p>
+        </div>
+        <div class="hourly-weather-item">
+            <p class="mb-1"> 00:00 </p> <i class="mdi mdi-weather-snowy"></i>
+            <p class="mb-0"><h3> 26° </h3></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
